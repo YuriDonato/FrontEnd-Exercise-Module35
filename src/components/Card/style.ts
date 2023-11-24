@@ -21,7 +21,7 @@ export const CardImg = styled.div<Props>`
   flex-direction: row-reverse;
 `
 
-export const Tag = styled.span`
+export const CardTag = styled.span`
   width: max-content;
   height: max-content;
   background-color: ${cores.vermelho};

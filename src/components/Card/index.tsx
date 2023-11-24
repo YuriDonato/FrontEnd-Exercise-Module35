@@ -1,13 +1,4 @@
-import {
-  Card,
-  CardButton,
-  CardContainer,
-  CardDescription,
-  CardImg,
-  CardRate,
-  CardTitle,
-  Tag
-} from './style'
+import * as S from './style'
 
 import estrela from '../../assets/images/estrela.svg'
 
@@ -29,24 +20,24 @@ const ListagemCard = ({
   url
 }: Props) => {
   return (
-    <Card>
-      <CardImg imgurl={imgurl}>
+    <S.Card>
+      <S.CardImg imgurl={imgurl}>
         {tag.map((tag) => (
-          <Tag key={tag}>{tag}</Tag>
+          <S.CardTag key={tag}>{tag}</S.CardTag>
         ))}
-      </CardImg>
-      <CardContainer>
+      </S.CardImg>
+      <S.CardContainer>
         <div className="containerHeader">
-          <CardTitle>{title}</CardTitle>
+          <S.CardTitle>{title}</S.CardTitle>
           <div>
-            <CardRate>{rate}</CardRate>
+            <S.CardRate>{rate}</S.CardRate>
             <img src={estrela} alt="estrela" />
           </div>
         </div>
-        <CardDescription>{description}</CardDescription>
-        <CardButton to={url}>Saiba mais</CardButton>
-      </CardContainer>
-    </Card>
+        <S.CardDescription>{description}</S.CardDescription>
+        <S.CardButton to={url}>Saiba mais</S.CardButton>
+      </S.CardContainer>
+    </S.Card>
   )
 }
 

@@ -1,13 +1,13 @@
 import Menu from '../../models/Menu'
-import { Button, Container, Description, Image, Title } from './style'
+import * as S from './style'
 
 const CardMenu = ({ description, imgurl, title }: Menu) => (
-  <Container>
-    <Image src={imgurl} alt="" />
-    <Title>{title}</Title>
-    <Description>{description}</Description>
-    <Button>Adicionar ao carrinho</Button>
-  </Container>
+  <S.Container>
+    <S.Image src={imgurl} alt="" />
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
+    <S.Button>Adicionar ao carrinho</S.Button>
+  </S.Container>
 )
 
 export default CardMenu
