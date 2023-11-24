@@ -1,4 +1,4 @@
-import { Container, FoodGenre, RestaurantName, BlackContainer } from './style'
+import * as S from './style'
 
 type Props = {
   name: string
@@ -6,14 +6,14 @@ type Props = {
 }
 
 const Banner = ({ name, genre }: Props) => (
-  <BlackContainer>
-    <Container genre={genre}>
+  <S.Black>
+    <S.Container genre={genre}>
       <div>
-        <FoodGenre>{genre}</FoodGenre>
-        <RestaurantName>{name}</RestaurantName>
+        <S.Genre>{genre}</S.Genre>
+        <S.Name>{name}</S.Name>
       </div>
-    </Container>
-  </BlackContainer>
+    </S.Container>
+  </S.Black>
 )
 
 export default Banner

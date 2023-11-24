@@ -5,10 +5,12 @@ export const ListagemContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  justify-items: center;
+  // justify-items: center;
   padding-top: 56px;
   padding-bottom: 120px;
-  padding-left: 171px;
-  padding-right: 171px;
-  justify-content: center;
+  // padding-left: 171px;
+  // padding-right: 171px;
+  // justify-content: center;
+  margin-left: 171px;
+  margin-right: 171px;
 `

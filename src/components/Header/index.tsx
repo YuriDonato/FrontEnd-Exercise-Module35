@@ -1,4 +1,4 @@
-import { HeaderBar, HeaderLink, HeaderLogo, HeaderText } from './style'
+import * as S from './style'
 import logo from '../../assets/images/logo.svg'
 
 export type Props = {
@@ -6,24 +6,24 @@ export type Props = {
 }
 
 const Header = ({ page }: Props) => (
-  <HeaderBar page={page}>
+  <S.HeaderBar page={page}>
     {page === 'home' ? (
       <>
-        <HeaderLogo page={page} src={logo} alt="Logo" />
-        <HeaderText>
+        <S.HeaderLogo page={page} src={logo} alt="Logo" />
+        <S.HeaderText page={page}>
           Viva experiências gastronômicas no conforto da sua casa
-        </HeaderText>
+        </S.HeaderText>
       </>
     ) : (
       <div>
-        <HeaderLink to={'/'}>Restaurantes</HeaderLink>
-        <HeaderLogo page={page} src={logo} alt="Logo" />
-        <HeaderLink to={'/'} align="right">
+        <S.HeaderLink to={'/'}>Restaurantes</S.HeaderLink>
+        <S.HeaderLogo page={page} src={logo} alt="Logo" />
+        <S.HeaderLink to={'/'} align="right">
           0 produto(s) no carrinho
-        </HeaderLink>
+        </S.HeaderLink>
       </div>
     )}
-  </HeaderBar>
+  </S.HeaderBar>
 )
 
 export default Header

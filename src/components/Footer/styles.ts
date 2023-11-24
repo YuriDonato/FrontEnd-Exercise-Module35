@@ -21,11 +21,11 @@ export const FooterText = styled.p`
   margin-bottom: 40px;
   color: ${cores.vermelho};
   text-align: center;
-  font-size: 16px;
+  font-size: 10px;
   width: 50%;
 `
 
-export const FooterSocialContainer = styled.div`
+export const SocialContainer = styled.div`
   img {
     width: 32px;
     height: 24px;

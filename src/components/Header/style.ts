@@ -17,7 +17,7 @@ export const HeaderBar = styled.div<Props>`
   display: flex;
   align-items: center;
   flex-direction: ${(p) => (p.page === 'home' ? 'column' : 'row')};
-  justify-content: center;
+  justify-content: 'center';
 
   div {
     width: 100%;
@@ -26,18 +26,20 @@ export const HeaderBar = styled.div<Props>`
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 171px;
     margin-right: 171px;
-    justify-items: center;
+    justify-items: ${(p) => (p.page === 'home' ? 'center' : 'stretch')};
   }
 `
 
 export const HeaderLogo = styled.img<Props>`
-  min-width: 125px;
-  min-height: 57.5px;
+  max-width: 125px;
+  max-height: 57.5px;
   margin-top: ${(p) => (p.page === 'home' ? '64px' : '0px')};
   margin-bottom: ${(p) => (p.page === 'home' ? '138px' : '0px')};
+  margin-right: ${(p) => (p.page === 'home' ? '0px' : '25%')};
+  margin-left: ${(p) => (p.page === 'home' ? '0px' : '25%')};
 `
 
-export const HeaderText = styled.h1`
+export const HeaderText = styled.h1<Props>`
   color: ${cores.vermelho};
   text-align: center;
   font-size: 36px;

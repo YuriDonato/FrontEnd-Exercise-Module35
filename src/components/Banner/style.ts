@@ -7,7 +7,7 @@ type Props = {
   genre: string
 }
 
-export const BlackContainer = styled.div`
+export const Black = styled.div`
   width: 100%;
   height: 312px;
   background-color: black;
@@ -25,11 +25,13 @@ export const Container = styled.div<Props>`
   background-blend-mode: darken;
 
   div {
-    padding: 25px 0px 32px 170px;
+    padding: 25px 0px 32px;
+    margin-left: 171px;
+    margin-right: 171px;
   }
 `
 
-export const FoodGenre = styled.h2`
+export const Genre = styled.h2`
   color: white;
   font-size: 32px;
   font-weight: 100;
@@ -37,7 +39,7 @@ export const FoodGenre = styled.h2`
   opacity: 1;
 `
 
-export const RestaurantName = styled(FoodGenre)`
+export const Name = styled(Genre)`
   font-weight: 900;
   padding-bottom: 32px;
   opacity: 1;
