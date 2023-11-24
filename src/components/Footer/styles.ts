@@ -3,7 +3,7 @@ import { cores } from '../../styles'
 
 export const FooterContainer = styled.div`
   width: 100%;
-  height: 298px;
+  height: 320px;
   background-color: ${cores.begeEscuro};
   display: flex;
   align-items: center;
@@ -18,10 +18,11 @@ export const FooterLogo = styled.img`
 
 export const FooterText = styled.p`
   padding-top: 80px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   color: ${cores.vermelho};
   text-align: center;
   font-size: 16px;
+  width: 50%;
 `
 
 export const FooterSocialContainer = styled.div`

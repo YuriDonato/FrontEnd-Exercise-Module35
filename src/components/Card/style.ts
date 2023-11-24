@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import { Link } from 'react-router-dom'
 
 type Props = {
   imgurl: string
@@ -72,8 +73,21 @@ export const CardDescription = styled.p`
   padding-bottom: 16px;
 `
 
-export const CardButton = styled(Tag)`
+export const CardButton = styled(Link)`
   padding: 4px 6px;
   font-size: 14px;
   cursor: pointer;
+
+  border: none;
+  text-decoration: none;
+
+  width: max-content;
+  height: max-content;
+  background-color: ${cores.vermelho};
+  color: ${cores.branca};
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 16px;
 `

@@ -16,8 +16,8 @@ type Props = {
   imgurl: string
   description: string
   rate: number
-  tagUm?: string
-  tagDois?: string
+  tag: string[]
+  url: string
 }
 
 const ListagemCard = ({
@@ -25,14 +25,15 @@ const ListagemCard = ({
   imgurl,
   description,
   rate,
-  tagUm,
-  tagDois
+  tag,
+  url
 }: Props) => {
   return (
     <Card>
       <CardImg imgurl={imgurl}>
-        {tagUm ? <Tag>{tagUm}</Tag> : <></>}
-        {tagDois ? <Tag>{tagDois}</Tag> : <></>}
+        {tag.map((tag) => (
+          <Tag key={tag}>{tag}</Tag>
+        ))}
       </CardImg>
       <CardContainer>
         <div className="containerHeader">
@@ -43,7 +44,7 @@ const ListagemCard = ({
           </div>
         </div>
         <CardDescription>{description}</CardDescription>
-        <CardButton>Saiba mais</CardButton>
+        <CardButton to={url}>Saiba mais</CardButton>
       </CardContainer>
     </Card>
   )
