@@ -51,15 +51,15 @@ export const CardContainer = styled.div`
       align-items: center;
 
       img {
-        padding-bottom: 16px;
-        padding-left: 8px;
+        margin-bottom: 16px;
+        margin-left: 8px;
       }
     }
   }
 `
 
 export const CardTitle = styled.h3`
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   font-size: 18px;
 `
 
@@ -70,7 +70,7 @@ export const CardDescription = styled.p`
   font-style: normal;
   font-weight: 400px;
   line-height: 22px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 `
 
 export const CardButton = styled(Link)`

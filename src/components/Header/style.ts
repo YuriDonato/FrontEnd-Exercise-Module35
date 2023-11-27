@@ -37,6 +37,10 @@ export const HeaderLogo = styled.img<Props>`
   margin-bottom: ${(p) => (p.page === 'home' ? '138px' : '0px')};
   margin-right: ${(p) => (p.page === 'home' ? '0px' : '25%')};
   margin-left: ${(p) => (p.page === 'home' ? '0px' : '25%')};
+
+  &:nth-child(2) {
+    justify-self: center;
+  }
 `
 
 export const HeaderText = styled.h1<Props>`

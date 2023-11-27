@@ -8,6 +8,22 @@ export const Container = styled.div`
   color: ${cores.begeEscuro};
   padding: 8px 8px 50px 8px;
   background-color: ${cores.vermelho};
+
+  &:nth-child(2) {
+    justify-self: center;
+  }
+  &:nth-child(3) {
+    justify-self: end;
+  }
+  &:nth-child(4) {
+    justify-self: start;
+  }
+  &:nth-child(5) {
+    justify-self: center;
+  }
+  &:nth-child(6) {
+    justify-self: end;
+  }
 `
 
 export const Image = styled.img`

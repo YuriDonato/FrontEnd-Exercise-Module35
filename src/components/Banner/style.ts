@@ -41,6 +41,6 @@ export const Genre = styled.h2`
 
 export const Name = styled(Genre)`
   font-weight: 900;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   opacity: 1;
 `
