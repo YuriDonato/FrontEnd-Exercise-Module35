@@ -28,6 +28,10 @@ export const Container = styled.div<Props>`
     padding: 25px 0px 32px;
     margin-left: 171px;
     margin-right: 171px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    }
   }
 `
 

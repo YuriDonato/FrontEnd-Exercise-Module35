@@ -27,6 +27,8 @@ export const HeaderBar = styled.div<Props>`
     margin-left: 171px;
     margin-right: 171px;
     justify-items: ${(p) => (p.page === 'home' ? 'center' : 'stretch')};
+    max-width: 1024px;
+    margin: 0 auto;
   }
 `
 

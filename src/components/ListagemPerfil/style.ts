@@ -13,4 +13,7 @@ export const ListagemContainer = styled.div`
   // justify-content: center;
   margin-left: 171px;
   margin-right: 171px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 `
